@@ -1,23 +1,18 @@
-import { useState, useEffect } from "react";
-import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./components/styles/themes";
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { darkTheme, lightTheme } from './components/styles/themes';
 import GlobalStyles from './components/styles/GlobalStyles'; 
 import About from './components/About'
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar'
-import Portfolio from "./components/Portfolio";
+import Portfolio from './components/Portfolio';
 
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
   return (
