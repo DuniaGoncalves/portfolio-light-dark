@@ -13,4 +13,5 @@ export const darkTheme = {
   primaryBg: `${deepGray}`,
   secondaryBg: `${warmCharGray}`,
   textColor: `${warmOffWhite}`,
+  buttonText: `${warmCharGray}`,
 };

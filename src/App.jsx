@@ -5,7 +5,7 @@ import GlobalStyles from './components/styles/GlobalStyles';
 import About from './components/About'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio';
 
 const App = () => {
