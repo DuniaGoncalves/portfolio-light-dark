@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, lightTheme } from "./components/styles/themes";
+import GlobalStyles from './components/styles/GlobalStyles'; 
 import About from './components/About'
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from './components/Navbar'
 import Portfolio from "./components/Portfolio";
-import './App.css'
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -19,13 +21,14 @@ const App = () => {
   };
 
   return (
-    <div className={`app ${theme}`}>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }>
+      <GlobalStyles />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <About theme={theme} />
       <Portfolio theme={theme} />
       <Contact theme={theme} />
       <Footer theme={theme} />
-    </div>
+    </ThemeProvider>
   );
 };
 
