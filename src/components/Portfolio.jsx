@@ -14,7 +14,7 @@ const Portfolio = () => {
       codeLink: "https://github.com/DuniaGoncalves",
     },
     {
-      title: "Prject C",
+      title: "Project C",
       description: "A website with dynamic animations, showcasing my design and coding skills.",
       liveLink: "https://decorandrentals.netlify.app/",
       codeLink: "https://github.com/DuniaGoncalves",
