@@ -10,15 +10,15 @@ export const NavWrapper = styled.nav`
 `;
 
 export const NavH1 = styled.h1`
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 `;
 
 export const ThemeButton = styled.button`
   background: ${(props) => props.theme.buttonBg};
-  border: none;
-  padding: 10px 15px;
   border-radius: 8px;
+  border: none;
   cursor: pointer;
+  padding: 10px 15px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -26,7 +26,7 @@ export const ThemeButton = styled.button`
   }
   
   svg {
-    stroke: ${(props) => props.theme.buttonText};
     fill: ${(props) => props.theme.buttonText};
+    stroke: ${(props) => props.theme.buttonText};
   }
 `;

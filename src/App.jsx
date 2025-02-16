@@ -19,10 +19,10 @@ const App = () => {
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }>
       <GlobalStyles />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <About theme={theme} />
-      <Portfolio theme={theme} />
-      <Contact theme={theme} />
-      <Footer theme={theme} />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </ThemeProvider>
   );
 };

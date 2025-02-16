@@ -1,11 +1,17 @@
-const Contact = ({ theme }) => {
+import { Section, SectionTitleH2, ContactLink } from "./styles/styles";
+
+const Contact = () => {
   return (
-    <section className={`contact ${theme}`}>
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:duniaimara@gmail.com">duniaimara@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/dunia-goncalves" target="_blank" rel="noopener noreferrer">linkedin.com/in/dunia-goncalves</a></p>
-      <p>GitHub: <a href="https://github.com/DuniaGoncalves" target="_blank" rel="noopener noreferrer">github.com/DuniaGoncalves</a></p>
-    </section>
+    <Section>
+      <SectionTitleH2>Contact Me</SectionTitleH2>
+      <ContactLink href="mailto:duniaimara@gmail.com">Email: duniaimara@gmail.com</ContactLink>
+      <ContactLink href="https://linkedin.com/in/dunia-goncalves" target="_blank">
+        LinkedIn: linkedin.com/in/dunia-goncalves
+      </ContactLink>
+      <ContactLink href="https://github.com/DuniaGoncalves" target="_blank">
+        GitHub: github.com/DuniaGoncalves
+      </ContactLink>
+    </Section>
   );
 };
 

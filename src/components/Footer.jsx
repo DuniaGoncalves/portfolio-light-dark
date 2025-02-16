@@ -1,8 +1,10 @@
-const Footer = ({ theme }) => {
+import { FooterWrapper, Paragraph } from "./styles/styles";
+
+const Footer = () => {
   return (
-    <footer className={`footer ${theme}`}>
-      <p>© 2025 Dunia Goncalves. All rights reserved.</p>
-    </footer>
+    <FooterWrapper>
+      <Paragraph>© 2025 Dunia Goncalves. All rights reserved.</Paragraph>
+    </FooterWrapper>
   );
 };
 
